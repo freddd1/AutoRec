@@ -1,7 +1,5 @@
 import zipfile
 import requests
-import os
-from config import DATA_PATH
 
 
 def movielens_downloader(data_name='ml-100k') -> None:
@@ -11,7 +9,7 @@ def movielens_downloader(data_name='ml-100k') -> None:
                       Here: http://files.grouplens.org/datasets/movielens/ you can find different datasets of movielens.
                       For example: ml-100k, ml-10m, etc.
     """
-    movielens_path = DATA_PATH + 'movielens/'
+    movielens_path = 'data/movielens/'
 
     url = f'http://files.grouplens.org/datasets/movielens/{data_name}.zip'
     zip_path = movielens_path + f'{data_name}.zip'
