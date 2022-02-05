@@ -7,7 +7,7 @@ def movielens_load(fold: int = None) -> (pd.DataFrame, pd.DataFrame):
     """
     The function will return test and train (or validation) datasets.
     :param fold: in range[1,5] that represents fold. If fold == None (Default), it will return the full dataset.
-    :return: (train, test)
+    :return: (train, test), each with ['user_id', 'items_id', 'rating', 'timestamp'] cols
     """
     cols_data = ['user_id', 'item_id', 'rating', 'timestamp']
 
@@ -28,7 +28,7 @@ def movielens_create_ratings(train: pd.DataFrame, test: pd.DataFrame) -> (pd.Dat
     where each row is user_id and each column is item_id.
     :param train: raw train from movielens
     :param test: raw test from movielens
-    :return: (train, test)
+    :return: (train, test) each as matrix r with size(num_users, num_items)
     """
     train = train.pivot(index='user_id', columns='item_id', values='rating').fillna(0)
     test = test.pivot(index='user_id', columns='item_id', values='rating').fillna(0)
