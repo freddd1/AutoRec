@@ -1,4 +1,5 @@
 from torch import nn
+import torch
 
 class MatrixFactorization(nn.Module):
     """
@@ -26,3 +27,24 @@ class MatrixFactorization(nn.Module):
         item = self.items_emb(item)
         return (user*item).sum(axis=1)
 
+
+def mf_train(train, model,device, epochs=10, lr=0.001, reg=0):
+    optimizer = torch.optim.Adam(model.parameters(), lr=lr, weight_decay=reg)
+    for i in range(epochs):
+        model.train()
+        # users and items indexes start 1, therefore we use the -1
+        users = torch.LongTensor(train.user_id.values-1).to(device)
+        items = torch.LongTensor(train.item_id.values-1).to(device)
+        ratings = torch.FloatTensor(train.rating.values).to(device) # rating is our label
+
+        preds = model(users, items)
+        loss = torch.sqrt(nn.functional.mse_loss(preds, ratings))
+
+        # backpropagation
+        optimizer.zero_grad()
+        loss.backward()
+
+        # update
+        optimizer.step()
+
+        print(f'train RMSE: {loss.item()}')
