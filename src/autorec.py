@@ -1,7 +1,7 @@
 import torch
 from torch import nn
 from torch.utils.data import DataLoader
-
+# TODO: Create local(maybe global) 'device' variable.
 
 
 class AutoRec(nn.Module):
@@ -34,6 +34,8 @@ class AutoRec(nn.Module):
 
 
 def autorec_train(train, model, device, batch_size=64, epochs=10, lr=0.005, reg=0):
+    # TODO:
+    #  1.Create variable that calculates the validation loss during the training.
     optimizer = torch.optim.Adam(model.parameters(), lr=lr, weight_decay=reg)
     dataloader = DataLoader(train.values, batch_size=batch_size)
     for epoch in range(1, epochs+1):

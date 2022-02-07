@@ -13,6 +13,9 @@ def movielens_data():
     with zipfile.ZipFile(zip_name,"r") as zip_ref:
         zip_ref.extractall()
 
-
+def netflix_data():
+    print("Please download Netflix dataset from - \n https://www.kaggle.com/netflix-inc/netflix-prize-data \n "
+          "Extrcat into- /data/netflix ")
 
 movielens_data()
+netflix_data()

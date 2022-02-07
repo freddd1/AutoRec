@@ -1,6 +1,8 @@
 from torch import nn
 import torch
 
+# TODO: Create local(maybe global) 'device' variable.
+
 class MatrixFactorization(nn.Module):
     """
     matrix factorization model.
@@ -28,7 +30,10 @@ class MatrixFactorization(nn.Module):
         return (user*item).sum(axis=1)
 
 
-def mf_train(train, model,device, epochs=10, lr=0.001, reg=0):
+def mf_train(train, model, device, epochs=10, lr=0.001, reg=0):
+    # TODO:
+    #  1.Create variable that calculates the validation loss during the training.
+    #  2.Modify the function to use batch size.(after dataloader class ready)
     optimizer = torch.optim.Adam(model.parameters(), lr=lr, weight_decay=reg)
     for i in range(epochs):
         model.train()
@@ -48,3 +53,13 @@ def mf_train(train, model,device, epochs=10, lr=0.001, reg=0):
         optimizer.step()
 
         print(f'train RMSE: {loss.item()}')
+
+
+#Data loader
+def mf_dataloader():
+    '''
+    '''
+    # TODO:
+    #  Build data loader function that returns dataloader class from pytorch. just like in autorec class.
+    pass
+
