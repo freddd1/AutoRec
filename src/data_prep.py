@@ -5,6 +5,8 @@ MOVIELENS_DATA_PATH = 'data/movielens/ml-100k/'
 NETFLIX_DATA_PATH = 'data/netflix'
 
 
+MOVIELENS_DATA_PATH = 'data/movielens/ml-100k/'
+
 def movielens_load(fold: int = None) -> (pd.DataFrame, pd.DataFrame):
     """
     The function will return test and train (or validation) datasets.
@@ -24,29 +26,42 @@ def movielens_load(fold: int = None) -> (pd.DataFrame, pd.DataFrame):
     return train, test
 
 
-def movielens_create_ratings(train: pd.DataFrame, test: pd.DataFrame) -> (pd.DataFrame, pd.DataFrame):
+def movielens_create_ratings(fold: int = None, size: tuple = (943, 1682)) -> (pd.DataFrame, pd.DataFrame):
     """
     the function will convert the raw train and test to dataframes for rating
     where each row is user_id and each column is item_id.
-    :param train: raw train from movielens
-    :param test: raw test from movielens
-    :return: (train, test) each as matrix r with size(num_users, num_items)
+    :param size: Will be the size of the full r matrix = (num_users, num_items)
+                 In case of "ml-110k" it is (943, 1682).
+                 You can find the full size in the README of each dataset.
+    :param fold: in range[1,5] that represents fold. If fold == None (Default), it will return the full dataset.
+    :return: (train, test), each as matrix r with size(num_users, num_items)
     """
+    # load the dataset
+    train, test = movielens_load(fold=fold)
+
     train = train.pivot(index='user_id', columns='item_id', values='rating').fillna(0)
     test = test.pivot(index='user_id', columns='item_id', values='rating').fillna(0)
 
-    return train, test
+    return _helper_createfulldf(train, test, size=size)
 
 
-def movielens_prep(fold: int = None) -> (pd.DataFrame, pd.DataFrame):
+def _helper_createfulldf(train: pd.DataFrame, test:pd.DataFrame, size) -> (pd.DataFrame, pd.DataFrame):
     """
-    this will be the driver function of the movielens data preparation. It will call all other necessary functions.
-    :param fold: in range[1,5] that represents fold. If fold == None (Default), it will return the full dataset.
-    :return: (train, test)
+    the function will create the full rating matrix in the size of the dataset
+    so the train and test will be ecxtly the same size and fill with 0 where there is no values.
+    :param train: users_items metrix with users and items from the fold
+    :param test: users_items metrix with users and items from the fold
+    :return: (train, test) each as matrix r with size(num_users, num_items)
     """
-    train, test = movielens_load(fold=fold)
-    train, test = movielens_create_ratings(train, test)
-    return train, test
+    new_train = pd.DataFrame(0, index=range(1, size[0]+1), columns=range(1, size[1]+1))
+    new_test = train.copy()
+
+    new_train.loc[train.index,train.columns] = train.values
+    new_test.loc[test.index,test.columns] = test.values
+
+    assert new_train.shape == new_test.shape
+
+    return new_train, new_test
 
 # TODO:
 #  create dataloder for the netflix datasets
