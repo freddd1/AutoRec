@@ -56,8 +56,13 @@ def _helper_createfulldf(train: pd.DataFrame, test:pd.DataFrame, size) -> (pd.Da
     new_train = pd.DataFrame(0, index=range(1, size[0]+1), columns=range(1, size[1]+1))
     new_test = train.copy()
 
-    new_train.loc[train.index,train.columns] = train.values
-    new_test.loc[test.index,test.columns] = test.values
+    new_train.loc[train.index, train.columns] = train.values
+    new_test.loc[test.index, test.columns] = test.values
+
+    # set the index to start from 0
+    for df in [new_train, new_test]:
+        df.index = df.index - 1
+        df.columns = df.columns -1
 
     assert new_train.shape == new_test.shape
 
