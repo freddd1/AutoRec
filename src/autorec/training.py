@@ -65,8 +65,8 @@ class AutoRecTrainer():
             self.eval_epoch()
 
             # Print epoch statistics
-            train_avg = np.mean(self.train_losses[-1])
-            val_avg = np.mean(self.val_losses[-1])
+            train_avg = np.nanmean(self.train_losses[-1])
+            val_avg = np.nanmean(self.val_losses[-1])
             print(f'EPOCH {epoch}: Avg losses: train: {train_avg:.3f}, val: {val_avg:.3f}')
 
     def train_epoch(self):
@@ -117,8 +117,6 @@ class AutoRecTrainer():
 
                 # Predict
                 preds = self.model(rating_batch).to(self.device)
-                # Avoid gradient explode
-                preds = preds.nan_to_num(0)
 
                 # Loss
                 val_loss = self.loss_func(preds, rating_batch, mask_batch)

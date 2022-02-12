@@ -16,6 +16,7 @@ class AutoRec(nn.Module):
 
         self.decoder = nn.Sequential(
             nn.Linear(num_hidden, num_features),
+            nn.Sigmoid()
 
         )
 
