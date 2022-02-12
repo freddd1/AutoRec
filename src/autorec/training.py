@@ -12,10 +12,10 @@ class AutoRecTrainer():
                  train: pd.DataFrame,
                  val: pd.DataFrame,
                  model: AutoRec,
-                 batch_size: int = 112,
+                 batch_size: int = 128,
                  epochs: int = 10,
                  lr: float = 0.001,
-                 reg: float = 0.001,
+                 reg: float = 0.0,
                  seed: int = 14):
         """
         Init function
