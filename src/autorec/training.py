@@ -17,6 +17,17 @@ class AutoRecTrainer():
                  lr: float = 0.001,
                  reg: float = 0.001,
                  seed: int = 14):
+        """
+        Init function
+        :param train: pd.DataFrame matrix where users in each row and items in each col
+        :param val: pd.DataFrame matrix where users in each row and items in each col
+        :param model: AutoRec model
+        :param batch_size: batch size
+        :param epochs: number of epochs
+        :param lr: learning rate
+        :param reg: lambda for regulation
+        :param seed: random seed for shuffling the data set
+        """
 
         # Set random seed
         torch.manual_seed(seed)
