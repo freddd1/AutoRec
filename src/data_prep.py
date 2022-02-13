@@ -63,11 +63,6 @@ def _helper_createfulldf(train: pd.DataFrame, test:pd.DataFrame, size) -> (pd.Da
     new_train.loc[train.index, train.columns] = train.values
     new_test.loc[test.index, test.columns] = test.values
 
-    # # set the index to start from 0
-    # for df in [new_train, new_test]:
-    #     df.index = df.index - 1
-    #     df.columns = df.columns -1
-
     assert new_train.shape == new_test.shape
 
     return new_train, new_test
@@ -77,7 +72,7 @@ def _helper_createfulldf(train: pd.DataFrame, test:pd.DataFrame, size) -> (pd.Da
 #  create train and test.
 #  create rating matrix
 
-def netflix_load(fold:int = 1) -> (pd.DataFrame):
+def _netflix_load_helper(fold:int = 1) -> (pd.DataFrame):
     """
     The function will convert txt file of the dataset to pd.DataFrame
     :param fold: in the range[1,4]
@@ -108,29 +103,59 @@ def netflix_load(fold:int = 1) -> (pd.DataFrame):
     df['user_id'] = df.user_id.astype(int)
     df['item_id'] = df.item_id.astype(int)
     df['rating'] = df.rating.astype('int8')
+
     return df
 
+def netflix_load(fold:int = 1) -> (pd.DataFrame, pd.DataFrame, dict, dict):
+    df = _netflix_load_helper(fold=fold)
+    df, idx2userid, idx2itemid = _arrange_indexes(df)
+    train, test = train_test_split(df, test_size=0.15, random_state=14)
+    return train, test, idx2userid, idx2itemid
 
-def netflix_create_ratings(df:pd.DataFrame) -> pd.DataFrame:
+def _arrange_indexes(df:pd.DataFrame) -> (pd.DataFrame, dict, dict):
+    """
+    :param df: rating df with (atleast) ['item_id', 'user_id', 'rating'] columns
+    :return: the new df and idx2userid dict which help us return to the original id and idx2itemid which will do the same, but for the items
+    """
+    # It is possible that we are missing few users_ids and items_ids, therefore we need to
+    # arrange them in a way that our model will work. Arrange them to start from 0
+    # and increment by 1.
+
+    # Users
+    unique_users_ids = np.unique(df.user_id)
+    userid2idx = {old_id: id for id, old_id in enumerate(unique_users_ids)}
+    # idx2userid dict will help us go back from the new id to the old one.
+    idx2userid = {id: old_id for old_id, id  in userid2idx.items()}
+
+    df.user_id = df.user_id.apply(lambda x: userid2idx[x])
+
+    # Items
+    unique_items_ids = np.unique(df.item_id)
+    itemid2idx = {old_id: id for id, old_id in enumerate(unique_items_ids)}
+    # idx2itemid dict will help us go back from the new id to the old one.
+    idx2itemid = {id: old_id for old_id, id  in userid2idx.items()}
+
+    df.item_id = df.item_id.apply(lambda x: itemid2idx[x])
+
+    return df, idx2userid, idx2itemid
+
+def netflix_create_ratings(fold: int=1) -> (pd.DataFrame, pd.DataFrame):
     """
     the function will convert the raw train and test to dataframes for rating
     where each row is user_id and each column is item_id.
-    :param df:
-    :return: rating matrix
+    :param fold: in range[1,4] that represents fold.
+    :return: (train, test), each as matrix r with size(num_users, num_items)
     """
-    df = df.pivot(index='user_id', columns='item_id', values='rating').fillna(0)
-    return df
+    # load the dataset
+    train, test, idx2userid, idx2itemid = netflix_load(fold=fold)
 
+    train = train.pivot(index='user_id', columns='item_id', values='rating').fillna(0)
+    test = test.pivot(index='user_id', columns='item_id', values='rating').fillna(0)
 
-def netflix_test_train_split(df: pd.DataFrame, test_size: float = 0.2) -> pd.DataFrame:
-    """
-    the function will convert Netflix rating matrix into 2 Dataframes- train & test.
-    :param
-        df: Netflix rating matrix
-        test_size:
+    size = (np.unique(train.user_id), np.unique(train.item_id))
 
-    :return:  (train(pd.DataFrame), test(pd.DataFrame))
-    """
-    train, test = train_test_split(df, test_size=test_size, random_state=17)
-    return train, test
+    train, test = _helper_createfulldf(train, test, size=size)
+
+    return train, test, idx2userid, idx2itemid
+
 
