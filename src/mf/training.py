@@ -142,11 +142,6 @@ class MFTrainer():
         return rmse
 
     def params(self):
-
-        params = {}
-        params['seed'] = self.seed
-        params['epochs'] = self.epochs
-        params['reg'] = self.reg
-        params['batch_size'] = self.batch_size
-        params['lr'] = self.lr
+        params = {'seed': self.seed, 'epochs': self.epochs, 'reg': self.reg, 'batch_size': self.batch_size,
+                  'lr': self.lr}
         return params

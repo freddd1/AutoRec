@@ -8,6 +8,7 @@ class AutoRec(nn.Module):
         :param num_hidden: Size of the hidden layer
         """
         super().__init__()
+        self.num_hidden = num_hidden
 
         self.encoder = nn.Sequential(
             nn.Linear(num_features, num_hidden),
@@ -23,3 +24,6 @@ class AutoRec(nn.Module):
         encoded = self.encoder(x)
         decoded = self.decoder(encoded)
         return decoded
+
+    def params(self):
+        return {'num_hidden': self.num_hidden}

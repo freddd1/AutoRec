@@ -30,6 +30,7 @@ class AutoRecTrainer():
         """
 
         # Set random seed
+        self.seed = seed
         torch.manual_seed(seed)
 
         # Set device
@@ -139,4 +140,7 @@ class AutoRecTrainer():
         rmse = torch.sqrt(nn.functional.mse_loss(preds, rating))
         return rmse
 
-
+    def params(self):
+        params = {'seed': self.seed, 'epochs': self.epochs, 'reg': self.reg, 'batch_size': self.batch_size,
+                  'lr': self.lr}
+        return params
