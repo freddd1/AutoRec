@@ -23,6 +23,10 @@ def movielens_load(fold: int = None) -> (pd.DataFrame, pd.DataFrame):
     train = pd.read_csv(f'{files_path}.base', delimiter='\t', header=None, names=cols_data)
     test = pd.read_csv(f'{files_path}.test', delimiter='\t', header=None, names=cols_data)
 
+    for df in [train, test]:
+        df.user_id = df.user_id - 1
+        df.item_id = df.item_id - 1
+
     return train, test
 
 
@@ -53,16 +57,16 @@ def _helper_createfulldf(train: pd.DataFrame, test:pd.DataFrame, size) -> (pd.Da
     :param test: users_items metrix with users and items from the fold
     :return: (train, test) each as matrix r with size(num_users, num_items)
     """
-    new_train = pd.DataFrame(0, index=range(1, size[0]+1), columns=range(1, size[1]+1))
+    new_train = pd.DataFrame(0, index=range(size[0]), columns=range(size[1]))
     new_test = train.copy()
 
     new_train.loc[train.index, train.columns] = train.values
     new_test.loc[test.index, test.columns] = test.values
 
-    # set the index to start from 0
-    for df in [new_train, new_test]:
-        df.index = df.index - 1
-        df.columns = df.columns -1
+    # # set the index to start from 0
+    # for df in [new_train, new_test]:
+    #     df.index = df.index - 1
+    #     df.columns = df.columns -1
 
     assert new_train.shape == new_test.shape
 
