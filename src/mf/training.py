@@ -30,10 +30,11 @@ class MFTrainer():
         """
 
         # Set random seed
-        torch.manual_seed(seed)
+        self.seed = seed
+        torch.manual_seed(self.seed)
 
         # Set device
-        self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+        self.device = 'cpu' #torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         self.model = model.to(self.device)
 
         # Train parameters
@@ -139,3 +140,13 @@ class MFTrainer():
         """
         rmse = torch.sqrt(nn.functional.mse_loss(preds, rating))
         return rmse
+
+    def params(self):
+
+        params = {}
+        params['seed'] = self.seed
+        params['epochs'] = self.epochs
+        params['reg'] = self.reg
+        params['batch_size'] = self.batch_size
+        params['lr'] = self.lr
+        return params

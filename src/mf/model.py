@@ -30,3 +30,6 @@ class MatrixFactorization(nn.Module):
         user = self.users_emb(user)
         item = self.items_emb(item)
         return (user*item).sum(axis=1)
+
+    def params(self):
+        return {'k': self.k}
