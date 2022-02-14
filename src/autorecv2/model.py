@@ -12,10 +12,14 @@ class AutoRecV2(nn.Module):
 
         self.encoder = nn.Sequential(
             nn.Linear(num_features, num_hidden),
+            nn.Sigmoid(),
+            nn.Linear(500, 250),
             nn.Sigmoid()
         )
 
         self.decoder = nn.Sequential(
+            nn.Linear(250, 500),
+            nn.Identity(),
             nn.Linear(num_hidden, num_features),
             nn.Identity()
         )
