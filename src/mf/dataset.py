@@ -19,10 +19,8 @@ class MFDataSet(Dataset):
         # Therefore, to get the "original id" we should add 1 to it
         self.users_ids = rating.user_id.values
         self.items_ids = rating.item_id.values
-        # We want to scale the rating, so it will be possible to compare the outputs to
-        # the AutoRec model. (In AutoRec we use Sigmoid, and it scales the rating)
-        scaler = MinMaxScaler(feature_range=(0, 1))
-        self.ratings = scaler.fit_transform(rating.rating.values.reshape(-1, 1)).flatten()
+
+        self.ratings = rating.rating.values
 
     def __getitem__(self, idx):
         return self.users_ids[idx], self.items_ids[idx], self.ratings[idx]
