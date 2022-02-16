@@ -8,12 +8,13 @@ def models_results(model_name=None):
     l = []
 
     if model_name is None:
-        models = ['MF', 'AutoRec', 'AutoRecV2']
+        models = ['MF', 'AutoRec_', 'AutoRecV2']
     else:
         models = [model_name]
 
     for model_name in models:
         files = glob.glob(f'models_params/{model_name}*')
+
         for file_path in files:
             with open(file_path, 'r') as f:
                 model_parmas = json.load(f)
