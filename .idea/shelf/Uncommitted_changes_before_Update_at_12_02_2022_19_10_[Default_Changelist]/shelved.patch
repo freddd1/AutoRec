@@ -1,0 +1,21 @@
+Index: .idea/AutoRec.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module type=\"PYTHON_MODULE\" version=\"4\">\r\n  <component name=\"NewModuleRootManager\">\r\n    <content url=\"file://$MODULE_DIR$\" />\r\n    <orderEntry type=\"jdk\" jdkName=\"Python 3.8 (AutoRec)\" jdkType=\"Python SDK\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n  </component>\r\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/AutoRec.iml b/.idea/AutoRec.iml
+--- a/.idea/AutoRec.iml	(revision 135ca8f08e4b32ea4e46827fc994157bba8c9f24)
++++ b/.idea/AutoRec.iml	(date 1644397386053)
+@@ -5,4 +5,7 @@
+     <orderEntry type="jdk" jdkName="Python 3.8 (AutoRec)" jdkType="Python SDK" />
+     <orderEntry type="sourceFolder" forTests="false" />
+   </component>
++  <component name="PyDocumentationSettings">
++    <option name="renderExternalDocumentation" value="true" />
++  </component>
+ </module>
+\ No newline at end of file
+diff --git a/src/mf/__int__.py b/src/mf/__int__.py
+new file mode 100644
