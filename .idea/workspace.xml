@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a4f866f-7ac1-4a3c-86dd-05c1a53a739f" name="Default Changelist" comment="Q1 and Q2 need more compressive explain">
+    <list default="true" id="4a4f866f-7ac1-4a3c-86dd-05c1a53a739f" name="Default Changelist" comment="commit">
+      <change afterPath="$PROJECT_DIR$/images/autorec.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_02_2022_19_10__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_02_2022_19_10__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_02_2022_16_16__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_02_2022_16_16__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/driver.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/driver.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models_params/MF_10_0.001_0.001" beforeDir="false" afterPath="$PROJECT_DIR$/models_params/MF_10_0.001_0.001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/autorec/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/autorec/dataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data_prep.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_prep.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mf/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/mf/dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models_params/AutoRec_100_0.001_0.001" beforeDir="false" afterPath="$PROJECT_DIR$/models_params/AutoRec_100_0.001_0.001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mf/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/mf/model.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,11 +55,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Wix Home assignment - Alon Karmona.ipynb" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\itama\DataspellProjects\AutoRec\images" />
       <recent name="C:\Users\itama\DataspellProjects\AutoRec\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -132,6 +135,7 @@
       <workItem from="1644935641146" duration="24187000" />
       <workItem from="1645030761072" duration="5451000" />
       <workItem from="1645091620029" duration="4448000" />
+      <workItem from="1645115170651" duration="5092000" />
     </task>
     <task id="LOCAL‎00001" summary="Fixed all the movielens loaders">
       <created>1644567314494</created>
