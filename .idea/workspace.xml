@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a4f866f-7ac1-4a3c-86dd-05c1a53a739f" name="Default Changelist" comment="commit">
-      <change afterPath="$PROJECT_DIR$/images/autorec.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_02_2022_19_10__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_02_2022_19_10__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_02_2022_16_16__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_02_2022_16_16__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="4a4f866f-7ac1-4a3c-86dd-05c1a53a739f" name="Default Changelist" comment="finish top3 models on movielen 1m">
       <change beforePath="$PROJECT_DIR$/driver.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/driver.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models_params/AutoRec_100_0.001_0.001" beforeDir="false" afterPath="$PROJECT_DIR$/models_params/AutoRec_100_0.001_0.001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mf/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/mf/model.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +50,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="CodeWithMe" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -135,7 +129,7 @@
       <workItem from="1644935641146" duration="24187000" />
       <workItem from="1645030761072" duration="5451000" />
       <workItem from="1645091620029" duration="4448000" />
-      <workItem from="1645115170651" duration="5092000" />
+      <workItem from="1645115170651" duration="5787000" />
     </task>
     <task id="LOCAL‎00001" summary="Fixed all the movielens loaders">
       <created>1644567314494</created>
@@ -251,7 +245,13 @@
       <option name="presentableId" value="LOCAL‎00019" />
       <updated>1645032642998</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL‎00020" summary="finish top3 models on movielen 1m">
+      <created>1645123943985</created>
+      <option name="number" value="LOCAL‎00020" />
+      <option name="presentableId" value="LOCAL‎00020" />
+      <updated>1645123943985</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,7 +288,8 @@
     <MESSAGE value="run the AutoRec again and fixed AutoRecV2" />
     <MESSAGE value="last table" />
     <MESSAGE value="Q1 and Q2 need more compressive explain" />
-    <option name="LAST_COMMIT_MESSAGE" value="Q1 and Q2 need more compressive explain" />
+    <MESSAGE value="finish top3 models on movielen 1m" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish top3 models on movielen 1m" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
