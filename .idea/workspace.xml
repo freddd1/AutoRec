@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4a4f866f-7ac1-4a3c-86dd-05c1a53a739f" name="Default Changelist" comment="Q1 and Q2 need more compressive explain">
+      <change beforePath="$PROJECT_DIR$/driver.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/driver.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models_params/MF_10_0.001_0.001" beforeDir="false" afterPath="$PROJECT_DIR$/models_params/MF_10_0.001_0.001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/autorec/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/autorec/dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data_prep.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_prep.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mf/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/mf/dataset.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jupyter Notebook" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="24rmofd6NkrodxrBcObNsGh3hq9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Wix Home assignment - Alon Karmona.ipynb" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\itama\DataspellProjects\AutoRec\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\itama\DataspellProjects\AutoRec\data\movielens\ml-1m" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="AutoRec" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="training" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="AutoRec" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/autorec" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/autorec/training.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.training" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4a4f866f-7ac1-4a3c-86dd-05c1a53a739f" name="Default Changelist" comment="" />
+      <created>1644397256425</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1644397256425</updated>
+      <workItem from="1644397259100" duration="1011000" />
+      <workItem from="1644399848577" duration="831000" />
+      <workItem from="1644409655652" duration="8743000" />
+      <workItem from="1644562106883" duration="39921000" />
+      <workItem from="1644747098569" duration="7684000" />
+      <workItem from="1644758247710" duration="21916000" />
+      <workItem from="1644935641146" duration="24187000" />
+      <workItem from="1645030761072" duration="5451000" />
+      <workItem from="1645091620029" duration="4448000" />
+    </task>
+    <task id="LOCAL‎00001" summary="Fixed all the movielens loaders">
+      <created>1644567314494</created>
+      <option name="number" value="LOCAL‎00001" />
+      <option name="presentableId" value="LOCAL‎00001" />
+      <updated>1644567314494</updated>
+    </task>
+    <task id="LOCAL‎00002" summary="Created `autorec` folder including `dataset.py`, `model.py`, 'training.py'">
+      <created>1644659896583</created>
+      <option name="number" value="LOCAL‎00002" />
+      <option name="presentableId" value="LOCAL‎00002" />
+      <updated>1644659896583</updated>
+    </task>
+    <task id="LOCAL‎00003" summary="Added docstring to `__init__`">
+      <created>1644660054874</created>
+      <option name="number" value="LOCAL‎00003" />
+      <option name="presentableId" value="LOCAL‎00003" />
+      <updated>1644660054874</updated>
+    </task>
+    <task id="LOCAL‎00004" summary="Fixed calc avg loss nans using `np.nanmean`">
+      <created>1644672985557</created>
+      <option name="number" value="LOCAL‎00004" />
+      <option name="presentableId" value="LOCAL‎00004" />
+      <updated>1644672985557</updated>
+    </task>
+    <task id="LOCAL‎00005" summary="changed second activation function to `nn.Identify`">
+      <created>1644684416159</created>
+      <option name="number" value="LOCAL‎00005" />
+      <option name="presentableId" value="LOCAL‎00005" />
+      <updated>1644684416159</updated>
+    </task>
+    <task id="LOCAL‎00006" summary="refactor all `src.mf`. i.e the matrixfactorization model">
+      <created>1644685683690</created>
+      <option name="number" value="LOCAL‎00006" />
+      <option name="presentableId" value="LOCAL‎00006" />
+      <updated>1644685683690</updated>
+    </task>
+    <task id="LOCAL‎00007" summary="delete `matrixfactorization.py`">
+      <created>1644685762625</created>
+      <option name="number" value="LOCAL‎00007" />
+      <option name="presentableId" value="LOCAL‎00007" />
+      <updated>1644685762625</updated>
+    </task>
+    <task id="LOCAL‎00008" summary="created `plot_train_history` in `plots.py`">
+      <created>1644695310552</created>
+      <option name="number" value="LOCAL‎00008" />
+      <option name="presentableId" value="LOCAL‎00008" />
+      <updated>1644695310552</updated>
+    </task>
+    <task id="LOCAL‎00009" summary="fixed movielens user_id and item_id to start from 0">
+      <created>1644749482403</created>
+      <option name="number" value="LOCAL‎00009" />
+      <option name="presentableId" value="LOCAL‎00009" />
+      <updated>1644749482404</updated>
+    </task>
+    <task id="LOCAL‎00010" summary="Created netflix fuctions. NEED TESTING!">
+      <created>1644758592130</created>
+      <option name="number" value="LOCAL‎00010" />
+      <option name="presentableId" value="LOCAL‎00010" />
+      <updated>1644758592130</updated>
+    </task>
+    <task id="LOCAL‎00011" summary="Scaled the rating to [0,1], so the RMSE will be comparable to the AutoRec model">
+      <created>1644760173845</created>
+      <option name="number" value="LOCAL‎00011" />
+      <option name="presentableId" value="LOCAL‎00011" />
+      <updated>1644760173845</updated>
+    </task>
+    <task id="LOCAL‎00012" summary="Added `parmas` function in `src.mf.model` and in `src.mf.training` and created HP loop in `driver` for MF">
+      <created>1644764913664</created>
+      <option name="number" value="LOCAL‎00012" />
+      <option name="presentableId" value="LOCAL‎00012" />
+      <updated>1644764913664</updated>
+    </task>
+    <task id="LOCAL‎00013" summary="Added `parmas` function in `src.autorec.model` and in `src.autorec.training` and created HP loop in `driver` for AutoRec">
+      <created>1644765658666</created>
+      <option name="number" value="LOCAL‎00013" />
+      <option name="presentableId" value="LOCAL‎00013" />
+      <updated>1644765658666</updated>
+    </task>
+    <task id="LOCAL‎00014" summary="hyper params functions">
+      <created>1644847180543</created>
+      <option name="number" value="LOCAL‎00014" />
+      <option name="presentableId" value="LOCAL‎00014" />
+      <updated>1644847180543</updated>
+    </task>
+    <task id="LOCAL‎00015" summary="added `autorecv2` to src with all the needed files">
+      <created>1644856236210</created>
+      <option name="number" value="LOCAL‎00015" />
+      <option name="presentableId" value="LOCAL‎00015" />
+      <updated>1644856236210</updated>
+    </task>
+    <task id="LOCAL‎00016" summary="Fixed scale in MF">
+      <created>1644942252424</created>
+      <option name="number" value="LOCAL‎00016" />
+      <option name="presentableId" value="LOCAL‎00016" />
+      <updated>1644942252425</updated>
+    </task>
+    <task id="LOCAL‎00017" summary="run the AutoRec again and fixed AutoRecV2">
+      <created>1645030294248</created>
+      <option name="number" value="LOCAL‎00017" />
+      <option name="presentableId" value="LOCAL‎00017" />
+      <updated>1645030294248</updated>
+    </task>
+    <task id="LOCAL‎00018" summary="last table">
+      <created>1645032510452</created>
+      <option name="number" value="LOCAL‎00018" />
+      <option name="presentableId" value="LOCAL‎00018" />
+      <updated>1645032510452</updated>
+    </task>
+    <task id="LOCAL‎00019" summary="Q1 and Q2 need more compressive explain">
+      <created>1645032642998</created>
+      <option name="number" value="LOCAL‎00019" />
+      <option name="presentableId" value="LOCAL‎00019" />
+      <updated>1645032642998</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fixed all the movielens loaders" />
+    <MESSAGE value="Created `autorec` folder including `dataset.py`, `model.py`, 'training.py'" />
+    <MESSAGE value="Added docstring to `__init__`" />
+    <MESSAGE value="Fixed calc avg loss nans using `np.nanmean`" />
+    <MESSAGE value="changed second activation function to `nn.Identify`" />
+    <MESSAGE value="refactor all `src.mf`. i.e the matrixfactorization model" />
+    <MESSAGE value="delete `matrixfactorization.py`" />
+    <MESSAGE value="created `plot_train_history` in `plots.py`" />
+    <MESSAGE value="fixed movielens user_id and item_id to start from 0" />
+    <MESSAGE value="Created netflix fuctions. NEED TESTING!" />
+    <MESSAGE value="Scaled the rating to [0,1], so the RMSE will be comparable to the AutoRec model" />
+    <MESSAGE value="Added `parmas` function in `src.mf.model` and in `src.mf.training` and created HP loop in `driver` for MF" />
+    <MESSAGE value="Added `parmas` function in `src.autorec.model` and in `src.autorec.training` and created HP loop in `driver` for AutoRec" />
+    <MESSAGE value="hyper params functions" />
+    <MESSAGE value="added `autorecv2` to src with all the needed files" />
+    <MESSAGE value="Fixed scale in MF" />
+    <MESSAGE value="run the AutoRec again and fixed AutoRecV2" />
+    <MESSAGE value="last table" />
+    <MESSAGE value="Q1 and Q2 need more compressive explain" />
+    <option name="LAST_COMMIT_MESSAGE" value="Q1 and Q2 need more compressive explain" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/mf/dataset.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/AutoRec$training.coverage" NAME="training Coverage Results" MODIFIED="1644757846154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/autorec" />
+  </component>
+</project>

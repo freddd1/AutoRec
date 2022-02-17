@@ -13,7 +13,9 @@ class I_AutoRecDataSet(Dataset):
     def __init__(self, rating: pd.DataFrame):
         super(I_AutoRecDataSet).__init__()
         # we transpose the matrices, so it will be ITEM TO ITEM
-        self.rating = rating.T.values
+        self.rating = rating
+
+        self.rating = self.rating.T.values
 
         # the mask will indicate us where we have rating. hence, rating > 0
         self.mask = (self.rating > 0)

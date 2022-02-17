@@ -22,6 +22,7 @@ class MFDataSet(Dataset):
 
         self.ratings = rating.rating.values
 
+
     def __getitem__(self, idx):
         return self.users_ids[idx], self.items_ids[idx], self.ratings[idx]
 
