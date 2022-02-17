@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a4f866f-7ac1-4a3c-86dd-05c1a53a739f" name="Default Changelist" comment="finish top3 models on movielen 1m">
-      <change beforePath="$PROJECT_DIR$/driver.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/driver.ipynb" afterDir="false" />
+    <list default="true" id="4a4f866f-7ac1-4a3c-86dd-05c1a53a739f" name="Default Changelist" comment="rename">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +129,7 @@
       <workItem from="1644935641146" duration="24187000" />
       <workItem from="1645030761072" duration="5451000" />
       <workItem from="1645091620029" duration="4448000" />
-      <workItem from="1645115170651" duration="5787000" />
+      <workItem from="1645115170651" duration="6311000" />
     </task>
     <task id="LOCAL‎00001" summary="Fixed all the movielens loaders">
       <created>1644567314494</created>
@@ -251,7 +251,25 @@
       <option name="presentableId" value="LOCAL‎00020" />
       <updated>1645123943985</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL‎00021" summary="summery">
+      <created>1645125683865</created>
+      <option name="number" value="LOCAL‎00021" />
+      <option name="presentableId" value="LOCAL‎00021" />
+      <updated>1645125683865</updated>
+    </task>
+    <task id="LOCAL‎00022" summary="added `data`">
+      <created>1645125777577</created>
+      <option name="number" value="LOCAL‎00022" />
+      <option name="presentableId" value="LOCAL‎00022" />
+      <updated>1645125777577</updated>
+    </task>
+    <task id="LOCAL‎00023" summary="rename">
+      <created>1645125858314</created>
+      <option name="number" value="LOCAL‎00023" />
+      <option name="presentableId" value="LOCAL‎00023" />
+      <updated>1645125858314</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,7 +307,10 @@
     <MESSAGE value="last table" />
     <MESSAGE value="Q1 and Q2 need more compressive explain" />
     <MESSAGE value="finish top3 models on movielen 1m" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish top3 models on movielen 1m" />
+    <MESSAGE value="summery" />
+    <MESSAGE value="added `data`" />
+    <MESSAGE value="rename" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
