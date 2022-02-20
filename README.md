@@ -1,4 +1,4 @@
-In this review, we covered the AutoRec: ['Autoencoders Meet Collaborative Filtering'](https://dl.acm.org/doi/pdf/10.1145/2740908.2742726) Paper
+In this review, we implemented the [AutoRec: Autoencoders Meet Collaborative Filtering](https://dl.acm.org/doi/pdf/10.1145/2740908.2742726) Paper in PyTorch, added an improvement, and compared it to the Matrix Factorization algorithm.
 <br><br><img height="200" src="images/autorec.png" width="400" class="center"/>
 <br><br>
 ## Summery 
